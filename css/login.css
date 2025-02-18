@@ -1,5 +1,5 @@
 @import 'animate.css';
-
+@import url(/css/reset.css);
 /* 전체 페이지 설정 */
 body {
     margin: 0;
