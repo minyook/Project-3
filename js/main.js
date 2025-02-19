@@ -1,3 +1,49 @@
+const box1 = document.getElementById("animatedBox1");
+    
+      box1.addEventListener("mouseenter", () => {
+        box1.classList.add("animate__bounce");
+      });
+    
+      box1.addEventListener("mouseleave", () => {
+        box1.classList.remove("animate__bounce");
+      });
+      const box2 = document.getElementById("animatedBox2");
+    
+      box2.addEventListener("mouseenter", () => {
+        box2.classList.add("animate__bounce");
+      });
+    
+      box2.addEventListener("mouseleave", () => {
+        box2.classList.remove("animate__bounce");
+      });
+      const box3 = document.getElementById("animatedBox3");
+    
+      box3.addEventListener("mouseenter", () => {
+        box3.classList.add("animate__bounce");
+      });
+    
+      box3.addEventListener("mouseleave", () => {
+        box3.classList.remove("animate__bounce");
+      });
+
+      const box4 = document.getElementById("animatedBox4");
+    
+      box4.addEventListener("mouseenter", () => {
+        box4.classList.add("animate__rubberBand");
+      });
+    
+      box4.addEventListener("mouseleave", () => {
+        box4.classList.remove("animate__rubberBand");
+      });
+      const box5 = document.getElementById("animatedBox5");
+    
+      box5.addEventListener("mouseenter", () => {
+        box5.classList.add("animate__bounceIn");
+      });
+    
+      box5.addEventListener("mouseleave", () => {
+        box5.classList.remove("animate__bounceIn");
+      });
 // 🔹 Firebase 설정
 const firebaseConfig = {
     apiKey: "YOUR_API_KEY",
