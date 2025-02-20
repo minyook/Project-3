@@ -44,6 +44,25 @@ const box1 = document.getElementById("animatedBox1");
       box5.addEventListener("mouseleave", () => {
         box5.classList.remove("animate__bounceIn");
       });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const text = "메뉴 정하기가 어렵다면?\nMJ가 도와줄게요!";
+  const typingElement = document.getElementById("typing-text");
+    
+  let index = 0;
+    
+  function typeEffect() {
+      if (index < text.length) {
+          typingElement.innerHTML += text[index] === "\n" ? "<br>" : text[index];
+          index++;
+          setTimeout(typeEffect, 100); // 타이핑 속도 조절 (100ms)
+        } else {
+              typingElement.classList.add("cursor");
+          }
+  }
+    
+    typeEffect();
+});
 // 🔹 Firebase 설정
 const firebaseConfig = {
     apiKey: "YOUR_API_KEY",
